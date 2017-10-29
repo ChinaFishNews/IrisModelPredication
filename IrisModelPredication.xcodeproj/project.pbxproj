@@ -12,6 +12,7 @@
 		576EA7F51FA320D90012AAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576EA7F31FA320D90012AAE7 /* Main.storyboard */; };
 		576EA7F71FA320D90012AAE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576EA7F61FA320D90012AAE7 /* Assets.xcassets */; };
 		576EA7FA1FA320D90012AAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576EA7F81FA320D90012AAE7 /* LaunchScreen.storyboard */; };
+		576EA8021FA320F30012AAE7 /* iris.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 576EA8011FA320E20012AAE7 /* iris.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		576EA7F61FA320D90012AAE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576EA7F91FA320D90012AAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		576EA7FB1FA320D90012AAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576EA8011FA320E20012AAE7 /* iris.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = iris.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				576EA7EF1FA320D90012AAE7 /* AppDelegate.swift */,
 				576EA7F11FA320D90012AAE7 /* ViewController.swift */,
+				576EA8011FA320E20012AAE7 /* iris.mlmodel */,
 				576EA7F31FA320D90012AAE7 /* Main.storyboard */,
 				576EA7F61FA320D90012AAE7 /* Assets.xcassets */,
 				576EA7F81FA320D90012AAE7 /* LaunchScreen.storyboard */,
@@ -96,7 +99,7 @@
 				TargetAttributes = {
 					576EA7EB1FA320D90012AAE7 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576EA8021FA320F30012AAE7 /* iris.mlmodel in Sources */,
 				576EA7F21FA320D90012AAE7 /* ViewController.swift in Sources */,
 				576EA7F01FA320D90012AAE7 /* AppDelegate.swift in Sources */,
 			);
@@ -274,11 +278,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KB7B8SQENU;
 				INFOPLIST_FILE = IrisModelPredication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.IrisModelPredication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48c04b31-2b93-44d6-8dad-6c2476828b57";
+				PROVISIONING_PROFILE_SPECIFIER = LvmamaGenericProfile;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KB7B8SQENU;
 				INFOPLIST_FILE = IrisModelPredication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lvmama.IrisModelPredication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "48c04b31-2b93-44d6-8dad-6c2476828b57";
+				PROVISIONING_PROFILE_SPECIFIER = LvmamaGenericProfile;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
